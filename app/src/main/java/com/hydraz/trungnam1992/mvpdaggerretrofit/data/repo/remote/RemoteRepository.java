@@ -9,6 +9,7 @@ import com.google.gson.Gson;
 import com.hydraz.trungnam1992.mvpdaggerretrofit.App;
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.datatobject.NewsModel;
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.service.NewsService;
+import com.hydraz.trungnam1992.mvpdaggerretrofit.utils.AppLog;
 import com.hydraz.trungnam1992.mvpdaggerretrofit.utils.Constants;
 
 import java.io.IOException;
@@ -74,6 +75,7 @@ public class RemoteRepository implements RemoteSource {
                             }
                         } catch (Exception ex) {
                             e.onError(ex);
+                            AppLog.e("", "" + ex);
                         }
                     }
 
@@ -91,10 +93,9 @@ public class RemoteRepository implements RemoteSource {
         try {
             retrofit2.Response response = call.execute();
             Gson gson = new Gson();
-//            L.json(NewsModel.class.getName(), gson.toJson(response.body()));
-            Log.e("nnam", gson.toJson(response.body()));
+            AppLog.json(NewsModel.class.getName(), gson.toJson(response.body()));
             if (isNull(response)) {
-                Log.e("nnam", "NETWORK_ERROR");
+                AppLog.e("nnam", "null");
 
                 return new ServiceResponse(new ServiceError(NETWORK_ERROR, ERROR_UNDEFINED));
             }

@@ -1,10 +1,14 @@
 package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
 
 import android.os.Bundle
+import android.os.Looper
+import android.speech.RecognitionListener
 import android.util.Log
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.datatobject.NewsModel
 import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.BaseCallback
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.RecyclerItemListener
 import com.hydraz.trungnam1992.mvpdaggerretrofit.usecase.GetNewItemUseCase
+import com.hydraz.trungnam1992.mvpdaggerretrofit.utils.AppLog
 import java.util.concurrent.atomic.AtomicBoolean
 import javax.inject.Inject
 
@@ -14,6 +18,12 @@ import javax.inject.Inject
 class MainPresenter
     @Inject
     constructor( var newItemUseCase: GetNewItemUseCase ) : BasePresenter<MainContact.MainView>, MainContact.Presenter {
+
+    private val recyclerItemListener = RecyclerItemListener() {
+
+    }
+    override fun getRecyclerItemListener(): RecyclerItemListener = recyclerItemListener
+
     override fun initialize(extras: Bundle) {
 
     }
@@ -40,7 +50,9 @@ class MainPresenter
     val callback = object : BaseCallback{
         override fun onSuccess(newsModel: NewsModel) {
 
-            Log.e("nnam " , "onSuccess" + newsModel.toString() )
+            AppLog.v("nnam " , "onSuccess" + newsModel.toString() )
+            view.initializeNewsList(newsModel.newsItems)
+
 
         }
 

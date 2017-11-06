@@ -1,5 +1,7 @@
 package com.hydraz.trungnam1992.mvpdaggerretrofit.ui;
 
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
 import com.hydraz.trungnam1992.mvpdaggerretrofit.App;
@@ -14,6 +16,7 @@ public class MainActivity extends BaseActivity implements MainContact.MainView {
 
     @Inject
     MainPresenter mainPresenter;
+    RecyclerView recyclerView;
 
     @Override
     public int getLayoutId() {
@@ -35,7 +38,12 @@ public class MainActivity extends BaseActivity implements MainContact.MainView {
 
     @Override
     public void initializeNewsList(List<? extends NewsItem> news) {
-
+        recyclerView = (RecyclerView)findViewById(R.id.new_recycleview);
+        NewsAdapter newsAdapter = new NewsAdapter(mainPresenter.getRecyclerItemListener(), news);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(newsAdapter);
     }
 
     @Override

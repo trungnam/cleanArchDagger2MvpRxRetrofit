@@ -1,6 +1,8 @@
 package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
 
+import android.speech.RecognitionListener
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.datatobject.NewsItem
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.RecyclerItemListener
 
 /**
  * Created by trungnam1992 on 11/4/17.
@@ -17,5 +19,7 @@ public interface MainContact  {
     interface Presenter : BasePresenter<MainView>{
         fun getNews()
         fun setTexttoView(str : String)
+        fun getRecyclerItemListener() : RecyclerItemListener
+
     }
 }

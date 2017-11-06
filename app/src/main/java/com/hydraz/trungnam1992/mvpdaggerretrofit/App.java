@@ -1,7 +1,7 @@
 package com.hydraz.trungnam1992.mvpdaggerretrofit;
 
-import android.app.Application;
 import android.content.Context;
+import android.support.multidex.MultiDexApplication;
 
 import com.hydraz.trungnam1992.mvpdaggerretrofit.di.AppComponent;
 import com.hydraz.trungnam1992.mvpdaggerretrofit.di.DaggerAppComponent;
@@ -10,7 +10,7 @@ import com.hydraz.trungnam1992.mvpdaggerretrofit.di.DaggerAppComponent;
  * Created by trungnam1992 on 11/1/17.
  */
 
-public class App extends Application{
+public class App extends MultiDexApplication{
 
     static Context context;
 

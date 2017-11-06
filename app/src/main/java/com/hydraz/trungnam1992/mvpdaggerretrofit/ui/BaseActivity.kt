@@ -3,6 +3,7 @@ package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.hydraz.trungnam1992.mvpdaggerretrofit.utils.AppLog
 
 /**
  * Created by trungnam1992 on 11/4/17.
@@ -27,6 +28,7 @@ public abstract class BaseActivity : AppCompatActivity(), BaseView {
 //                initialize(intent.extras)
 //            }
 //        }
+        AppLog.e("", "Hello" )
     }
 
     override fun onStart() {

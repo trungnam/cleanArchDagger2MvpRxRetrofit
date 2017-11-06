@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.android/build-cache/41c88efcb69692726e8951a1b2f4255953b74f3a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/classes_13051ab17564ec08a6702afacfb6a42ecaae31da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.android/build-cache/88346b8f7437125b2c759f5b59f80b3316f0b2ca/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/classes_b09cca02d111510d09bac3543ecd7d169e5a8678.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.android/build-cache/a023c459aca8964595ff6923b3097f969c0bbc46/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2a156b99fc7cc034308f942906b09d32754a4470">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/classes_1ab5cc3c13d39c8a46593b85fdf8e40f3e597bf6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.android/build-cache/3e812e33794f31e5dd1d969a3901eea889c91845/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/classes_c58b7f1eefbc43555b65fba8fc9bde2a22ef575a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.android/build-cache/812d6b2bf7b46b7fd563f085f245099880c3ac05/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/classes_0205ca4b31d79697f759b4296926842e9f825d03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.5.1/bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc/butterknife-annotations-8.5.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.5.1_348043b91c5177ff420d61013ed8f2a5de9d94dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.android/build-cache/4f6753ab4a2521ff5e5639783788b027bf1b598b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="19f281a785ca0eb5f6799fc7bf7ca199a9ca1e8b">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/classes_495d574416cd6edf728b77f74280732707867d3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/trungnam1992/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/trungnam1992/Documents/cleanArchDagger2MvpRxRetrofit/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_087d232eb2922a2c229750a1941ddb5187f8c56a.jar" />
+    </item>
+
+</items>

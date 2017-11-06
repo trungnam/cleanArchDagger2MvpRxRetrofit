@@ -39,14 +39,24 @@ dependencies {
     //Rx adapter for retrofit
     //Rx
     //Android RX
-    
 
+    compile 'com.orhanobut:logger:1.15'
+    compile "com.jakewharton:butterknife:8.5.1"
+    annotationProcessor "com.jakewharton:butterknife-compiler:8.5.1"
 
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //MultiDex
+    compile 'com.android.support:multidex:+'
 
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
 
-    compile 'com.android.support:appcompat-v7:25.1.0'
+    //android support & recyclerview
+    compile "com.android.support:recyclerview-v7:25.1.0"
+    compile "com.android.support:design:25.1.0"
+    compile "com.android.support:appcompat-v7:25.1.0"
+
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.code.gson:gson:2.7'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
@@ -59,4 +69,14 @@ dependencies {
     testCompile 'junit:junit:4.12'
     kapt 'com.google.dagger:dagger-compiler:2.7'
     provided 'javax.annotation:jsr250-api:1.0'
+}
+ext {
+
+    //Libraries
+
+    espressoVersion = '2.2.2'
+    retrofitVersion = '2.2.0'
+    okhttpVersion = '3.3.0'
+    butterKnifeVersion = '8.5.1'
+    mockitoVersion = '2.7.1'
 }

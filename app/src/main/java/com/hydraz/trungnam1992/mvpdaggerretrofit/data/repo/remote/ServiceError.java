@@ -1,5 +1,7 @@
 package com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote;
 
+import com.hydraz.trungnam1992.mvpdaggerretrofit.utils.AppLog;
+
 /**
  * Created by AhmedEltaher on 5/12/2016
  */
@@ -28,11 +30,16 @@ public class ServiceError {
     }
 
     public ServiceError() {
+        AppLog.e("" , "Service error");
     }
 
     public ServiceError(String description, int code) {
         this.description = description;
         this.code = code;
+        AppLog.e("" , "Service error " + description );
+        AppLog.e("" , "Service error " + code );
+
+
     }
 
     public String getDescription() {

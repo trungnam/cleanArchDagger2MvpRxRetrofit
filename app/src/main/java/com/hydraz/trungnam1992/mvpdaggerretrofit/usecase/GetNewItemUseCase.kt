@@ -24,7 +24,7 @@ class GetNewItemUseCase @Inject constructor(
 
     lateinit var singleNewItems : Single<NewsModel>
 
-    private lateinit var newsDisposable: Disposable
+    private  lateinit var newsDisposable: Disposable
 
 
     override fun getNews(callback: BaseCallback) {

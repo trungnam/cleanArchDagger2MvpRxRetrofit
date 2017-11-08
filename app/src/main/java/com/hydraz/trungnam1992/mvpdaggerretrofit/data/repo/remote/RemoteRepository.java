@@ -52,6 +52,7 @@ public class RemoteRepository implements RemoteSource {
             @Override
             public void accept(@io.reactivex.annotations.NonNull Throwable throwable) throws Exception {
                 Log.i(UNDELIVERABLE_EXCEPTION_TAG, throwable.getMessage());
+                AppLog.e("",""+ throwable.getMessage());
             return;
             }
         });

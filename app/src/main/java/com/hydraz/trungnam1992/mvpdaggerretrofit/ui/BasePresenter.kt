@@ -6,15 +6,15 @@ import java.util.concurrent.atomic.AtomicBoolean
 /**
  * Created by trungnam1992 on 11/3/17.
  */
-public  interface BasePresenter< in T : BaseView> {
+public  abstract class BasePresenter< in T : BaseView> {
 
 
-    var isViewAlive : AtomicBoolean
+    open lateinit var isViewAlive : AtomicBoolean
 
-    fun detachView(view: T)
-    fun attachView(view: T)
+    abstract fun detachView(view: T)
+    abstract fun attachView(view: T)
 
-    fun initialize (extras: Bundle)
+    open fun initialize (extras: Bundle) {}
 
     fun start() = this.isViewAlive.set(true)
 

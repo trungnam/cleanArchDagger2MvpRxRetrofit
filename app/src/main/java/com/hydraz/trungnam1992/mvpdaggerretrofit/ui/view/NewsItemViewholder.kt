@@ -25,7 +25,6 @@ class NewsViewHolder(itemView: View, private val onItemClickListener: RecyclerIt
     internal var tvCaption: TextView? = null
     @BindView(R.id.tv_title)
     internal var tvTitle: TextView? = null
-    @BindView(R.id.rl_news_item)
     internal var newsItemLayout: RelativeLayout? = null
 
 
@@ -33,8 +32,8 @@ class NewsViewHolder(itemView: View, private val onItemClickListener: RecyclerIt
 
     init {
         ButterKnife.bind(this, itemView)
-          newsImage = itemView.findViewById(R.id.iv_news_item_image) as ImageView
-
+        newsImage = itemView.findViewById(R.id.iv_news_item_image) as ImageView
+        newsItemLayout = itemView.findViewById(R.id.rl_news_item) as RelativeLayout
     }
 
     fun bind(position: Int, newsItem: NewsItem, recyclerItemListener: RecyclerItemListener) {
@@ -52,6 +51,6 @@ class NewsViewHolder(itemView: View, private val onItemClickListener: RecyclerIt
             URL = newsItem.getMultimedia().get(3).getUrl()
         }
         Picasso.with(App.getContext()).load(URL).placeholder(getDrawableById(R.drawable.avata)).into(newsImage)
-       // newsItemLayout?.setOnClickListener { v -> recyclerItemListener.onItemSelected(position) }
+        newsItemLayout?.setOnClickListener { v -> recyclerItemListener.onItemSelected(position) }
     }
 }

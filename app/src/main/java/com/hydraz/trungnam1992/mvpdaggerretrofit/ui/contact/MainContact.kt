@@ -1,6 +1,7 @@
-package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
+package com.hydraz.trungnam1992.mvpdaggerretrofit.ui.contact
 
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.datatobject.NewsItem
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.BaseView
 import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.RecyclerItemListener
 
 /**
@@ -8,7 +9,7 @@ import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.RecyclerItemListene
  */
 public interface MainContact  {
 
-    interface MainView : BaseView{
+    interface MainView : BaseView {
         fun initializeNewsList(news: List<NewsItem>)
         fun helloCleanArchText(str: String)
 

@@ -5,6 +5,7 @@ import android.util.Log
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.datatobject.NewsModel
 import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.BaseCallback
 import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.RecyclerItemListener
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.contact.MainContact
 import com.hydraz.trungnam1992.mvpdaggerretrofit.usecase.GetNewItemUseCase
 import com.hydraz.trungnam1992.mvpdaggerretrofit.utils.AppLog
 import io.reactivex.Observable
@@ -32,7 +33,6 @@ class MainPresenter
                     .just("rain water", "river water", "lake water")
                     .map { water -> "Clean $water" }
                     .subscribe{ cleanWater -> Log.i("TAG", "Drink $cleanWater") }
-
 
             var com = CompositeDisposable()
 

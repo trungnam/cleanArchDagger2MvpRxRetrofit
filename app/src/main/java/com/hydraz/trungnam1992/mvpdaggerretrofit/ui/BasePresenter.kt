@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 /**
  * Created by trungnam1992 on 11/3/17.
  */
-public  abstract class BasePresenter< in T : BaseView> {
+abstract class BasePresenter< in T : BaseView> {
 
 
     open lateinit var isViewAlive : AtomicBoolean

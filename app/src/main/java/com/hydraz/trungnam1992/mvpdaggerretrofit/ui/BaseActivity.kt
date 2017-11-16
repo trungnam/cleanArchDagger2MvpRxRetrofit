@@ -23,17 +23,13 @@ public abstract class BaseActivity : AppCompatActivity(), BaseView {
         setContentView(layoutId)
         initializeDagger()
         initializePresenter()
-//        presenter.apply {
-//            if (null != intent.extras) {
-//                initialize(intent.extras)
-//            }
-//        }
+
         AppLog.e("", "Hello" )
     }
 
     override fun onStart() {
         super.onStart()
-        //presenter.start()
+        presenter.start()
     }
 
     override fun onResume() {
@@ -43,7 +39,7 @@ public abstract class BaseActivity : AppCompatActivity(), BaseView {
     override fun onStop() {
         super.onStop()
         if (true) {
-          //  presenter.finalizeView()
+            presenter.finalizeView()
         }
     }
 

@@ -1,4 +1,4 @@
-package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
+package com.hydraz.trungnam1992.mvpdaggerretrofit.ui.view
 
 
 import android.os.Bundle
@@ -9,7 +9,9 @@ import android.widget.TextView
 import com.hydraz.trungnam1992.mvpdaggerretrofit.App
 import com.hydraz.trungnam1992.mvpdaggerretrofit.R
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.datatobject.NewsItem
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.adapter.NewsAdapter
 import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.contact.MainContact
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.presenter.MainPresenter
 
 import javax.inject.Inject
 

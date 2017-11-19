@@ -1,4 +1,4 @@
-package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
+package com.hydraz.trungnam1992.mvpdaggerretrofit.ui.presenter
 
 import android.os.Bundle
 import android.util.Log
@@ -26,6 +26,7 @@ class MainPresenter
     @Inject
     constructor( var newItemUseCase: GetNewItemUseCase ) : BasePresenter<MainContact.MainView>(), MainContact.Presenter {
 
+    private lateinit var view: MainContact.MainView
 
     private val recyclerItemListener = object : RecyclerItemListener {
         override fun onItemSelected(position: Int) {
@@ -75,7 +76,6 @@ class MainPresenter
         set(value) {}
 
 
-    private lateinit var view: MainContact.MainView
     override fun detachView(view: MainContact.MainView) {
     }
 

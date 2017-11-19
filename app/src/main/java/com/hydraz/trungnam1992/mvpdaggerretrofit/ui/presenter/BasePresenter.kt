@@ -1,4 +1,4 @@
-package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
+package com.hydraz.trungnam1992.mvpdaggerretrofit.ui.presenter
 
 import android.os.Bundle
 import java.util.concurrent.atomic.AtomicBoolean

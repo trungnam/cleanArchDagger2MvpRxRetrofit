@@ -1,8 +1,10 @@
-package com.hydraz.trungnam1992.mvpdaggerretrofit.ui
+package com.hydraz.trungnam1992.mvpdaggerretrofit.ui.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.presenter.BasePresenter
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.presenter.BaseView
 import com.hydraz.trungnam1992.mvpdaggerretrofit.utils.AppLog
 
 /**
@@ -29,7 +31,7 @@ public abstract class BaseActivity : AppCompatActivity(), BaseView {
 
     override fun onStart() {
         super.onStart()
-        presenter.start()
+        //presenter.start()
     }
 
     override fun onResume() {
@@ -39,7 +41,7 @@ public abstract class BaseActivity : AppCompatActivity(), BaseView {
     override fun onStop() {
         super.onStop()
         if (true) {
-            presenter.finalizeView()
+            //presenter.finalizeView()
         }
     }
 

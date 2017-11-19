@@ -1,7 +1,7 @@
 package com.hydraz.trungnam1992.mvpdaggerretrofit.ui.contact
 
 import com.hydraz.trungnam1992.mvpdaggerretrofit.data.repo.remote.datatobject.NewsItem
-import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.BaseView
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.presenter.BaseView
 import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.Listener.RecyclerItemListener
 
 /**

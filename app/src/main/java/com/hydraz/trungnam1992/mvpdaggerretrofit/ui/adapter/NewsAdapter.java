@@ -1,4 +1,4 @@
-package com.hydraz.trungnam1992.mvpdaggerretrofit.ui;
+package com.hydraz.trungnam1992.mvpdaggerretrofit.ui.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

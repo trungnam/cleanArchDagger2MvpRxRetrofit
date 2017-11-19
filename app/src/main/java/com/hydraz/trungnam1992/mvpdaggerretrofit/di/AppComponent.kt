@@ -1,6 +1,7 @@
 package com.hydraz.trungnam1992.mvpdaggerretrofit.di
 
-import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.MainActivity
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.view.MainActivity
+import com.hydraz.trungnam1992.mvpdaggerretrofit.ui.view.LoginSignUpActivity
 import dagger.Component
 import javax.inject.Singleton
 
@@ -12,5 +13,6 @@ import javax.inject.Singleton
 public interface AppComponent{
 
     fun inject(activity: MainActivity)
+    fun inject(loiginSignUpActivity: LoginSignUpActivity)
 
 }

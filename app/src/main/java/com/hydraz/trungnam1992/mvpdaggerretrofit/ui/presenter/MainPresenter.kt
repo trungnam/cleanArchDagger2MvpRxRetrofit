@@ -89,7 +89,6 @@ class MainPresenter
 
     val callback = object : BaseCallback{
         override fun onSuccess(newsModel: NewsModel) {
-
             AppLog.v("nnam " , "onSuccess" + newsModel.toString() )
             view.initializeNewsList(newsModel.newsItems)
 
